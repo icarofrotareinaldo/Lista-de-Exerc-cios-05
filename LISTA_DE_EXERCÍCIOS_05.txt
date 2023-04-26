@@ -1,0 +1,65 @@
+Lista de Exercícios 05
+
+1)Programa de Cálculos
+
+let v1 = prompt("Digite o primeiro número");
+let v2 = prompt("Digite o segundo número");
+v2 = Number(v2);
+let v3 = prompt("Digite o terceiro valor");
+let v4 = prompt("Digite o quarto valor");
+v4 = Number(v4);
+let m = v1*v3;
+let s = v2+v4;
+document.write(O resultado da multiplicação é: ${m} e a soma é: ${s});
+
+2)Programa Cotação
+
+let cot_dolar = prompt("Digite quanto está valendo o dólar");
+let quant_real = prompt("Digite quanto você tem em reais");
+let valor_dolar =quant_real/cot_dolar;
+document.write(Quantidade de dólares:${valor_dolar});
+
+3)Programa Abastecimento
+
+let preco_comb = prompt("Informe o preço do combustível:");
+let valor_abast = prompt("Digite o valor que você deseja abastecer:");
+let litros = Math.round(valor_abast/preco_comb);
+document.write(Quantidade de litros comprados: ${litros});
+
+4)Programa Temperatura
+
+let c = Number(prompt("Digite a temperatura em ºC: "));
+let f = Number((9*c+160)/5);
+document.write(${c}ºC equivalem a ${f}ºF);
+
+5)Programa Círculo
+
+let raio = Number(prompt("Digite o raio"));
+let area = Math.round(3.14 * raio);
+document.write(Área do círculo ${area});
+
+
+6)Programa de Desconto
+
+let valor = Number(prompt("Digite o valor do produto"));
+let desconto = valor*30/100
+let valor_pago = valor-desconto;
+document.write(Valor do desconto ${desconto} e valor a ser pago ${valor_pago});
+
+
+7)Programa Idade
+
+let anos = Number(prompt("Digite sua idade"));
+let meses = Number(prompt("Digite quantos meses de vida você possui:"));
+let dias = Number(prompt("Digite quanto dias de vida você possui:"));
+let idade_dias = anos*365+meses*30+dias;
+document.write(Total de idade em dias ${idade_dias});
+
+8)Programa Prestação
+
+let valor = Number(prompt("Digite valor do boleto"));
+let juros = Number(prompt("Digite o percentual de juros"));
+let dias = Number(prompt("Digite os dias de atraso"));
+let prestacao = valor+(valor*(juros/100)) * dias;
+document.write(Valor do boleto ${valor}, percentual de juros ${juros}, dias de atraso ${dias},);
+document.write(Valor da prestação ${prestacao});
